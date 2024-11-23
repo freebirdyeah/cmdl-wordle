@@ -63,7 +63,7 @@ while attempt <= 6:
     for i in range(0, 5):
 
         if boxes[i] == 0:
-            boxes[i] = "\u2B1C"
+            boxes[i] = "\u274C"
 
             if og_guess[i] not in hidden_word:
                 not_valid_letters.append(og_guess[i])

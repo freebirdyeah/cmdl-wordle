@@ -15,7 +15,7 @@ def map_letter_frequency(word):
     frequency_map_og = frequency_map
 
 
-with open("C:/Users/shaan/Downloads/words.txt", "r") as file:
+with open("words.txt", "r") as file:
     five_letter_words = [line.strip() for line in file]
 
 
@@ -76,7 +76,7 @@ while attempt <= 6:
     
     else: 
         boxes = "".join(boxes)
-        print(f"Your guess: {"".join(og_guess)}")
+        print(f"Your guess: {''.join(og_guess)}")
         print(f"         {(boxes)}" + '\n')
 
         if len(not_valid_letters) > 0:
@@ -87,6 +87,6 @@ while attempt <= 6:
     attempt += 1
     
     if attempt > 6:
-        print(f"The correct word was {"".join(hidden_word)}")
+        print(f"The correct word was {''.join(hidden_word)}")
 
 

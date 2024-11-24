@@ -19,7 +19,6 @@ with open("words.txt", "r") as file:
     five_letter_words = [line.strip() for line in file]
 
 
-attempt = 1
 hidden_word = list((five_letter_words[random.randint(0, len(five_letter_words)-1)]).upper())
 not_valid_letters = []
 map_letter_frequency("".join(hidden_word))
@@ -88,5 +87,4 @@ while attempt <= 6:
     
     if attempt > 6:
         print(f"The correct word was {''.join(hidden_word)}")
-
 
